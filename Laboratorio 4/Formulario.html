@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario para Curriculum Vitae</title>
+  </head>
+  <body>
+    <form action="CV_Ana_Portugal.html">
+      <header>
+        <legend>Formulario para el curriculum</legend>
+        <h5>Por favor, llene los siguientes campos:</h5>
+      </header>
+      <section>
+        <!--Foto de curriculum-->
+        <h6>Anada una foto para su curriculum</h6>
+        <input type="file" name="Foto de curriculum" required/>
+      </section>
+      <section>
+        <h6>Seccion de experiencia</h6>
+        <input
+          type="text"
+          name="Experiencia de la persona"
+          placeholder="Ingrese practicas, voluntariados o sitios de trabajo por los cuales haya pasado o este haciendo actualmente (con fecha)"
+          size="50"
+          required
+        />
+      </section>
+      <section>
+        <h6>Seccion de educacion</h6>
+        <input
+          type="text"
+          name="Educacion de la persona"
+          placeholder="Ingrese cursos o estudios por los cuales haya pasado o este haciendo actualmente (con fecha)"
+          size="50"
+          required
+        />
+      </section>
+      <section>
+        <h6>Seccion de conocimientos</h6>
+        <input
+          type="text"
+          name="Conocimientos de la persona"
+          placeholder="Ingrese conocimientos que posee"
+          width="50"
+          height="50"
+          required
+        />
+      </section>
+      <section>
+        <h6>Seccion de datos generales</h6>
+        <p>Nombre completo</p>
+        <input type="text" name="Nombre completo" required />
+        <p>Cedula</p>
+        <input type="text" name="Cedula" required />
+        <p>Edad</p>
+        <input type="text" name="Fecha de nacimiento" required />
+        <p>Nacionalidad</p>
+        <input type="text" name="Nacionalidad" required />
+        <p>Estado civil</p>
+        <input type="text" name="Estado civil" required />
+      </section>
+      <section>
+        <h6>Seccion abierta</h6>
+      </section>
+      <input
+        type="text"
+        name="Seccion abierta"
+        placeholder="Ingrese informacion sobre preferencias y gustos."
+        required
+      />
+      <br /><br /><input type="Submit" />
+    </form>
+  </body>
+</html>
