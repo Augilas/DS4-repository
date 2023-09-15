@@ -14,39 +14,40 @@
       <section>
         <!--Foto de curriculum-->
         <h5>Anada una foto para su curriculum</h5>
-        <input type="file" name="Foto de curriculum" required/>
+        <input type="file" name="Foto de curriculum" required />
       </section>
+      <hr />
       <section>
         <h5>Seccion de experiencia</h5>
-        <input
-          type="text"
+
+        <textarea
           name="Experiencia de la persona"
-          placeholder="Ingrese practicas, voluntariados o sitios de trabajo por los cuales haya pasado o este haciendo actualmente (con fecha)"
-          size="50"
-          required
-        />
+          placeholder="Ingrese practicas, voluntariados o sitios de trabajo por los cuales haya pasado o este haciendo actualmente (con fecha)."
+          cols="30"
+          rows="10"
+        ></textarea>
       </section>
+      <hr />
       <section>
         <h5>Seccion de educacion</h5>
-        <input
-          type="text"
+        <textarea
           name="Educacion de la persona"
-          placeholder="Ingrese cursos o estudios por los cuales haya pasado o este haciendo actualmente (con fecha)"
-          size="50"
-          required
-        />
+          cols="30"
+          rows="10"
+          placeholder="Ingrese cursos o estudios por los cuales haya pasado o este haciendo actualmente (con fecha)."
+        ></textarea>
       </section>
+      <hr />
       <section>
         <h5>Seccion de conocimientos</h5>
-        <input
-          type="text"
+        <textarea
           name="Conocimientos de la persona"
-          placeholder="Ingrese conocimientos que posee"
-          width="50"
-          height="50"
-          required
-        />
+          placeholder="Ingrese conocimientos que posee."
+          cols="30"
+          rows="10"
+        ></textarea>
       </section>
+      <hr />
       <section>
         <h5>Seccion de datos generales</h5>
         <p>Nombre completo</p>
@@ -60,16 +61,24 @@
         <p>Estado civil</p>
         <input type="text" name="Estado civil" required />
       </section>
+      <hr />
       <section>
         <h5>Seccion abierta</h5>
       </section>
-      <input
-        type="text"
+      <textarea
         name="Seccion abierta"
         placeholder="Ingrese informacion sobre preferencias y gustos."
-        required
-      />
-      <br /><br /><input type="Submit" />
+        cols="30"
+        rows="10"
+      ></textarea>
+      <br /><br /><br /><input type="Submit" />
     </form>
+    <footer>
+      <hr />
+      <nav>
+        <button><a href="Menu.html">Regresar al menu principal</a></button>
+        <button><a href="SubMenu.html">Crear otro CV</a></button>
+      </nav>
+    </footer>
   </body>
 </html>
