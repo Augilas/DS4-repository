@@ -1,0 +1,276 @@
+* {
+    font-family: sans-serif;
+}
+
+.logo {
+    width: 400px;
+    height: 60px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* */
+.menu-item {
+    padding: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.menu-item:hover {
+    text-decoration: underline;
+    text-decoration-color: darkred;
+    text-decoration-thickness: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/*Seccion de botones */
+button {
+    padding: 20px 40px;
+    font-size: 30px;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.rojo {
+    background-color: #B22424;
+    color: white;
+    transition-duration: 0.4s;
+    border-style: none;
+
+}
+
+.rojo:hover {
+    transition-duration: 0.4s;
+    background-color: darkred;
+    border-style: none;
+}
+
+.blanco {
+ transition-duration: 0.4s;
+ background-color: white;
+}
+
+.blanco:hover {
+    transition-duration: 0.4s;
+    color: white;
+    background-color: #3E3C3C;
+}
+
+.amarillo {
+    transition-duration: 0.4s;
+    background-color: #cabe75;
+    border: none;
+    margin-right: 20px;
+    }
+    
+    .amarillo:hover {
+    background-color: #fff5b2;
+    border: none;
+    }
+    
+.negro {
+        background-color: transparent;
+        transition-duration: 0.4s;
+        color: white;
+        border-color: white;
+    }
+    
+    .negro:hover {
+        background-color: #3E3C3C;
+        color: white;
+        border-color: white;
+    }
+
+.azul {
+    transition-duration: 0.4s;
+    background-color: #3c6c7a;
+    color: white;
+    border: none;
+}
+
+.azul:hover {
+    background-color: #5c9fb4;
+    color: white;
+    border: none;
+}
+
+/*Seccion de movimiento de botones */
+.mover1{
+    margin-left: 1450px;
+    margin-top: 600px;
+    }
+    .tamano {
+        padding: 20px 40px;
+        font-size: 20px;
+    }
+    
+    .mover2 {
+        margin-left: 20px;
+    }
+    
+    .mover3 {
+        margin-left: 1100px;
+        margin-top: 600px;
+        display: flex;
+        flex-shrink: 0
+    }
+    
+    .mover4{
+        margin-left: 130px;
+        margin-top: 300px;
+    }
+    
+    .mover5{
+        margin-left: 1210px;
+        margin-top: 450px;
+    }
+    
+    .mover6 {
+        margin-left: 430px;
+        margin-top: 600px;
+    }
+
+/*Seccion de partes y sus estilos */
+.primera_parte {
+    background: url(Images/header_gif.gif);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+}
+
+.heirloom {
+    padding-top: 1000px;
+}
+
+
+
+/*Elemento de la pagina que flota sobre el header */
+.overlay {
+    z-index: 9;
+    margin: 30px;
+    width: 900px;
+    height: 1100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    flex-direction: row;
+}
+
+
+
+.segunda_parte {
+    width: 1000px;
+    height: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.tercera_parte {
+    background: url(Images/Wisp_prime.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+}
+
+.cuarta_parte {
+    background: url(Images/equinox_Wukong.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+}
+
+
+.quinta_parte {
+    background: url(Images/Offers_shop.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    padding-bottom: 60px;
+    margin: 80px;
+}
+
+.sexta_parte {
+    background: url(Images/ember_prime.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    padding-bottom: 60px;
+    margin: 30px;
+}
+
+.penultima_parte {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+/*Clase que permite anadir el borde vertical derecho del menu secundario */
+.line {
+    font-size: 30px;
+    border-right: 1px solid black;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+
+
+
+
+
+.imagen_last_section {
+    width: 150px;
+    height: 90px;
+    padding-left: 90px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+.languages {
+    width: 300px;
+    height: 80px;
+    font-size: 30px;
+    font-weight: bold;
+    background: url(Images/languages.png) no-repeat;
+    background-position: left;
+    background-size: 40px;
+    text-align: center;
+    margin-left: 600px;
+}
+
+.ultima_parte {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 300px;
+    font-size: 20px;
+    font-weight: 400;
+}
