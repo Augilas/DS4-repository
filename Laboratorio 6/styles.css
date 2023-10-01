@@ -1,0 +1,14 @@
+.utp_logo {
+    display: flexbox;
+    float: left;
+    width: 150px;
+    height: 150px;
+}
+
+
+.fisc_logo {
+    display: flexbox;
+    float: right;
+    width: 150px;
+    height: 150px;
+}
