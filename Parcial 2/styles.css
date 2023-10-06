@@ -8,7 +8,7 @@ body {
 
 .menu {
     display: flex;
-    justify-content: space-between; /* 让子元素之间有空间，第一张图片在最左边，第二张图片在中间 */
+    justify-content: space-between; 
     background: rgb(247, 191, 100);
     padding-top: 5px;
     padding-bottom: 5px;
@@ -23,8 +23,8 @@ body {
 
 .caja_producto {
     display: flex;
-    align-items: flex-start; /* 将子元素上对齐 */
-    justify-content: space-between; /* 在父元素内创建空间 */
+    align-items: flex-start; 
+    justify-content: space-between; 
     background-color: #FDF5E6;
     padding-top: 10px;
     padding-bottom: 25px;
@@ -32,9 +32,9 @@ body {
   
 
 .titulo {
-    display: inline-block; /* 将标题变成内联块元素 */
-    border: 3px solid #d33f3f; /* 添加边框样式，可以根据需要调整 */
-    padding: 20px; /* 添加内边距，可以根据需要调整 */
+    display: inline-block; 
+    border: 3px solid #d33f3f; 
+    padding: 20px; 
     margin-left: 50px;
     font-size: 50px;
     border-radius: 0 30px 30px 0;
