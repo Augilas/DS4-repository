@@ -1,28 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laboratorio 6</title>
     <link rel="stylesheet" type="text/css" href="Styles.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!--Un menú de navegación colocado 
         horizontalmente, cada enlace del menú 
         debe tener un color de fondo, bordes 
         redondeados y relleno para que sea 
         visualmente agradable-->
     <header>
-        <nav>
-
-        </nav>
-        <!--Un encabezado con el título del 
+      <nav class="menu">
+        <ul class="menu">
+          <li class="menu-item">
+            <a class="botones_menu" href="index.html">Inicio</a>
+          </li>
+          <li class="menu-item">
+            <a class="botones_menu" href="http://www.utp.ac.pa/"
+              >Universidad Tecnologica de Panama</a
+            >
+          </li>
+          <li class="menu-item">
+            <a class="botones_menu" href="https://fisc.utp.ac.pa/"
+              >Facultad de Ingenieria de Sistemas Computacionales</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!--Un encabezado con el título del 
             laboratorio y su información 
             (Adecuarlo visualmente a su 
             manera).-->
-        <h1>Laboratorio 6 - CSS Positions and Floating (Flexbox)</h1>
+      <section class="fondo_papel">
+        <h1 class="Info_lab">
+          Laboratorio 6 - CSS Positions and Floating (Flexbox)
+        </h1>
+        <ol class="lista_parametros">
+          <li>
+            Un menú de navegación colocado horizontalmente, cada enlace del menú
+            debe tener un color de fondo, bordes redondeados y relleno para que
+            sea visualmente agradable
+          </li>
+          <li>
+            Un encabezado con el título del laboratorio y su información
+            (Adecuarlo visualmente a su manera)
+          </li>
+          <li>
+            Una sección compuesta de 3 artículos, cada uno posee una imagen de
+            150x150px y una breve descripción que sobrepase el tamaño del
+            contenedor para cortarlo con un enlace simulando el efecto de “ver
+            más”. CADA ARTÍCULO DEBE ESTAR AL LADO DEL OTRO COMO UN CONJUNTO DE
+            3 COLUMNAS.
+          </li>
+          <li>
+            Una sección con una imagen alargada horizontalmente con un texto
+            sobre ella explicando la imagen. (Buscar efecto para opacar la
+            imagen y permitir que el texto se visualice).
+          </li>
+          <li>
+            Un pie de página con el logo de la UTP a la izquierda y el logo de
+            la FISC a la derecha con un tamaño de 150x150px
+          </li>
+        </ol>
+      </section>
     </header>
     <!--Una sección compuesta de 3 artículos, 
         cada uno posee una imagen de 150x150px 
@@ -32,16 +76,59 @@
         “ver más”. CADA ARTÍCULO DEBE ESTAR AL 
         LADO DEL OTRO COMO UN CONJUNTO DE 3 
         COLUMNAS.-->
-    <section>
-        <article>
-            <img src="" alt="">
-        </article>
-        <article>
-            <img src="" alt="">
-        </article>
-        <article>
-            <img src="" alt="">
-        </article>
+    <section class="articulos">
+      <article class="articulo">
+        <section>
+          <img class="imagen_articulo" src="images/articulo1.jpg" alt="" />
+        </section>
+
+        <section class="textito">
+          <h1>
+            Investigadores del CINEMI participaron en Noche Iberoamericana de
+            Investigadores
+          </h1>
+          <p>
+            Con la participación de investigadores panameños, la Organización de
+            Estados Iberoamericanos para la Educación, Ciencia y Cultura (OEI)
+          </p>
+          <a href="" class="botones_menu boton_articulo">Ver mas</a>
+        </section>
+      </article>
+
+      <article class="articulo">
+        <section>
+          <img class="imagen_articulo" src="images/articulo2.jpg" alt="" />
+        </section>
+
+        <section class="textito">
+          <h1>
+            Emprendedores de la UTP Chiriquí participan en la UNESCO - IEEE
+            ENTREPRENEURSHIP WORKSHOP
+          </h1>
+          <p>
+            Estudiantes del Centro Regional de Panamá Oeste de la Universidad
+            Tecnológica de Panamá (UTP), participaron de la gran Final de la
+          </p>
+          <a href="" class="botones_menu boton_articulo">Ver mas</a>
+        </section>
+      </article>
+
+      <article class="articulo">
+        <section>
+          <img class="imagen_articulo" src="images/articulo3.jpeg" alt="" />
+        </section>
+        <section class="textito">
+          <h1>
+            Estudiantes del Centro Regional de Panamá Oeste participan de la
+            Gran Final de la JIC
+          </h1>
+          <p>
+            Diez emprendedores del Centro Regional de la Universidad Tecnológica
+            de Panamá (UTP) en Chiriquí, participaron en la Semana
+          </p>
+          <a href="" class="botones_menu boton_articulo">Ver mas</a>
+        </section>
+      </article>
     </section>
 
     <!--Una sección con una imagen alargada 
@@ -49,17 +136,22 @@
         ella explicando la imagen. (Buscar 
         efecto para opacar la imagen y 
         permitir que el texto se visualice).-->
-    <section>
-        <img src="" alt="">
+    <section class="imagen_horizontal">
+      <section class="texto_no_opacado">
+        <h2>
+          Una imagen color verde con diseno de escamas en el lado izquierdo
+        </h2>
+      </section>
     </section>
 
     <!--Un pie de página con el logo de la UTP 
         a la izquierda y el logo de la FISC a 
         la derecha con un tamaño de 150x150px-->
-<footer>
-<img class="utp_logo" src="images/UTP_Logo.png" alt="UTP Logo">
-<img class="fisc_logo" src="images/FISC_Logo.png" alt="FISC Logo">
-</footer>
-</body>
-
+    <footer>
+        <section>
+            <img class="utp_logo" src="images/UTP_Logo.png" alt="UTP Logo" />
+            <img class="fisc_logo" src="images/FISC_Logo.png" alt="FISC Logo" />
+        </section>
+    </footer>
+  </body>
 </html>
