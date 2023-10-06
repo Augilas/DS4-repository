@@ -6,6 +6,258 @@ body {
     height: 100%;
   }
 
+.menu {
+    display: flex;
+    justify-content: space-between; /* 让子元素之间有空间，第一张图片在最左边，第二张图片在中间 */
+    background: rgb(247, 191, 100);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.icono{
+    background-color: rgb(247, 191, 100);
+    width: 80px;
+    margin-left: 10px;
+}
+
+
+.caja_producto {
+    display: flex;
+    align-items: flex-start; /* 将子元素上对齐 */
+    justify-content: space-between; /* 在父元素内创建空间 */
+    background-color: #FDF5E6;
+    padding-top: 10px;
+    padding-bottom: 25px;
+  }
+  
+
+.titulo {
+    display: inline-block; /* 将标题变成内联块元素 */
+    border: 3px solid #d33f3f; /* 添加边框样式，可以根据需要调整 */
+    padding: 20px; /* 添加内边距，可以根据需要调整 */
+    margin-left: 50px;
+    font-size: 50px;
+    border-radius: 0 30px 30px 0;
+    background-color: rgb(244, 76, 76);
+    color: white;
+  }
+
+.parrafo{
+    text-align: justify;
+    font-size: 18px;
+    margin-left: 50px;
+    color: #DEB887;
+    font-weight: bold;
+}
+  
+.imagenProducto img {
+    flex: 0; 
+    margin-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    height: 300px;
+}
+
+.caja_contactus {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 35px; 
+    background-color: #F7DC6F ;
+}
+
+.imagenTienda img {
+    flex: 1; 
+    margin-right: 20px;
+    height:350px;
+    border-radius: 20px;
+}
+
+.aboutus h2{
+    color: white;
+    font-size: 35px;
+}
+
+.caja_telefono {
+    display: inline-block;
+    padding: 10px; 
+    background-color: #E74C3C;
+    border: 3px solid #E74C3C; 
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.caja_satisfaccion{
+    background-color: #FCF3CF  ;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.caja_satisfaccion h2{
+    margin-top: 0;
+    padding-top: 0; 
+    font-size: 50px;
+    color: rgb(244, 76, 76);;
+
+}
+
+.satisfaccion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    
+}
+
+.contenido_izquierdo, .contenido_derecho{
+    width: 45%;
+    padding: 10px;
+}
+
+.caja_contenido{
+    display: inline-block;
+    border: 2px solid ;
+    background-color: white;
+    padding: 15px;
+    margin-left: 8px;
+    text-align: center;
+    color: white;
+}
+
+.caja_contenido1{
+    background-image: url(Images/comeramen.jpg);
+    padding:35px;
+    height:300px;
+    font-size: 20px;
+}
+
+.caja_contenido2{
+    background-image: url(Images/tiporamen.jpg);
+    background-size: cover;
+    padding:35px;
+    height:300px;
+    font-size: 20px;
+}
+
+.satis-descrip{
+    color: #E59866;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.caja_menu {
+    text-align: center;
+    padding:20px;
+    background-color: #F7DC6F ;
+}
+
+.menuramen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.menu-Ramen{
+    text-align: center;
+    margin: 10px;
+}
+
+.menu-imagen{
+    width: 250px;
+    height:200px;
+    border-radius: 15px;
+}
+
+.caja_menu h2{
+    color:white;
+    font-size: 40px;
+}
+
+.caja_menu p{
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+
+.ver-mas-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #E74C3C;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.caja_carac {
+    text-align: center;
+    padding: 20px;
+    background-image: url(Images/ramenanime.jpg);
+}
+
+.caja_carac h2{
+    color:#F7DC6F;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.caracteristicas {
+    text-align: center;
+}
+
+.caracteristicas div {
+    display: block; 
+    background-color:#E74C3C;
+    border: 2px solid #E74C3C;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    max-width: 200px; 
+    max-height: 55px;
+    color:white;
+    font-weight: bolder;
+    border-radius: 15px;
+}
+
+.caracteristicas div:nth-child(1) {
+    margin-left: 0px; 
+}
+
+.caracteristicas div:nth-child(2) {
+    margin-left: 180px; 
+}
+
+.caracteristicas div:nth-child(3) {
+    margin-left: 360px; 
+}
+
+.caracteristicas div:nth-child(4) {
+    margin-left: 540px; 
+}
+
+.caracteristicas div:nth-child(5) {
+    margin-left: 720px; 
+}
+
+.caracteristicas div:nth-child(6) {
+    margin-left: 900px; 
+}
+
+.caracteristicas div:nth-child(7) {
+    margin-left: 1080px; 
+}
+
+.caracteristicas div:nth-child(8) {
+    margin-left: 1260px; 
+}
+
 .boton_rojo {
 background-color: rgb(244, 76, 76);
 color: white;
