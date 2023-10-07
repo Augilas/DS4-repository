@@ -128,7 +128,6 @@ a:hover {
     height: 50%;
     position: relative;
     background-color: black;
-
 }
 
 .imagen_horizontal::before {
@@ -145,4 +144,5 @@ a:hover {
     isolation: isolate;
     color: white;
     font-size: 90%;
+    padding-top: 10%;
 }
