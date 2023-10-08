@@ -662,6 +662,11 @@ label {
     }
 
     /* Seccion de companias colaboradoras */
+    .partners2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .partners h1 {
         display: flex;
         justify-content: center;
