@@ -533,3 +533,162 @@ label {
     background-color: #383838;
     color: white;
 }
+
+@media (max-width: 460px) {
+    /* Primera Seccion */
+    .caja_producto {
+        flex-direction: column;
+    }
+    .titulo {
+        margin: 10%;
+    }
+    .parrafo {
+        margin: 10%;
+    }
+    .imagenProducto img {
+        margin: 10%;
+        flex: auto;
+        width: 400px;
+    }
+
+    /* Seccion About Us */
+    .caja_contactus{
+        flex-direction: column;
+    }
+    .imagenTienda img {
+        flex: auto;
+        width: 400px;
+        margin-right: 0;
+    }
+
+    /* Seccion de satisfaccion */
+    .caja_satisfaccion {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .caja_satisfaccion h2{
+        margin: 10%;
+    }
+    .satisfaccion {
+        padding: 0;
+        font-size: small;
+    }
+    .contenido_izquierdo, .contenido_derecho {
+        width: 45%;
+        margin: 1%;
+        padding: 5px;
+      }
+    .caja_contenido{
+        padding: 4px;
+    }
+    .caja_contenido2 {
+        padding: 8px;
+    }
+
+    /* Seccion de menu de ramen */
+    .menuramen{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /* Seccion de caracteristicas de ramen */
+    .caja_carac h2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .caracteristicas {
+        display: flex;
+        flex-direction: column;
+    }
+    .caracteristicas div:nth-child(1) {
+        margin-left: 0px; 
+    }
+    
+    .caracteristicas div:nth-child(2) {
+        margin-left: 20px; 
+    }
+    
+    .caracteristicas div:nth-child(3) {
+        margin-left: 40px; 
+    }
+    
+    .caracteristicas div:nth-child(4) {
+        margin-left: 60px; 
+    }
+    
+    .caracteristicas div:nth-child(5) {
+        margin-left: 80px; 
+    }
+    
+    .caracteristicas div:nth-child(6) {
+        margin-left: 100px; 
+    }
+    
+    .caracteristicas div:nth-child(7) {
+        margin-left: 120px; 
+    }
+    
+    .caracteristicas div:nth-child(8) {
+        margin-left: 140px; 
+    }
+
+    /* Seccion de resenas */
+    /* Seccion de ofertas */
+    /* Seccion de nuestro equipo */
+    .team h2 {
+        margin: 10%;
+    }
+    .team_pics {
+        margin-left: 0%;
+        flex-direction: column;
+    }
+    .man1{
+        width: 70%;
+    }
+    .man2 {
+        margin: 15px 15px 15px 10%;
+        width: 70%;
+    }
+    .woman1 {
+        width: 70%;
+    }
+    .woman2 {
+        width: 70%;
+    }
+    .fa {
+        width: 40px;
+    }
+
+    /* Seccion de companias colaboradoras */
+    .partners h1 {
+        display: flex;
+        justify-content: center;
+    }
+    .partner_logos {
+        width: 25%;
+    }
+
+    /* Seccion de contactenos */
+    .big_box {
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 30%;
+        margin-bottom: 30%;
+    }
+    .smol_box {
+        padding: 15px;
+        justify-content: center;
+    }
+    .cajitas_info {
+        width: 200px;
+    }
+    .cajota {
+        width: 200px;
+    }
+    .contactenos_info {
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+}
