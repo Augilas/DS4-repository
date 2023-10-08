@@ -795,7 +795,54 @@ label {
     }
 
     /* Seccion de resenas */
+    .caja_envoltorio {
+        flex-direction: column;
+    }
+    .eat_ramen {
+        width: 360px;
+        margin: 10%;
+    }
+    .titulote {
+        text-align: center;
+    }
+    .mini_caja p{
+        display: flex;
+        justify-content: center;
+    }
+    .big {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
     /* Seccion de ofertas */
+    .big_caja_oferta{
+        flex-direction: column;
+    }
+    .caja_oferta {
+        width: 20%;
+    }
+    .caja1{
+        margin-left: 2%;
+    }
+    .caja_oferta.caja1 h3,
+    .caja_oferta.caja1 h4,
+    .caja_oferta.caja1 h5 {
+        font-size: large;
+    }
+    .caja_oferta.caja1 h2 {
+        text-align: center;
+        font-size: xx-large;
+    }
+    .caja_oferta.caja2 h3,
+    .caja_oferta.caja2 h4,
+    .caja_oferta.caja2 h5 {
+        font-size: large;
+    }
+    .caja_oferta.caja2 h2 {
+        text-align: center;
+        font-size: xx-large;
+    }
+
     /* Seccion de nuestro equipo */
     .team h2 {
         margin: 10%;
@@ -853,7 +900,7 @@ label {
         width: 200px;
     }
     .contactenos_info {
-        margin-right: 25px;
-        margin-left: 25px;
+        margin-left: 25%;
+        margin-top: 10%;
     }
 }
