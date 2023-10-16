@@ -4,93 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laboratorio 7</title>
+    <link rel="stylesheet" type="text/css" href="Styles.css" />
 </head>
 <body onload="getDatos(1)">
     <script type="text/javascript" src="javascript.js"></script>
 
     <header>
-
+            <h1 class="Info_lab">Laboratorio 7 - Practica de Javascript</h1>
+            <img class="jascript" src="images/javascript.png" alt="">
+            <h2 class="centrado">Cree un sitio HTML de una sola seccion, con una tabla de 3x11</h2>
+            <ol class="lista_parametros">
+                <li>Cambiar el color de parrafo (uso de style)</li>
+                <li>Anadir texto a un parrafo (uso de operadores)</li>
+                <li>Concatenar el valor de dos textos (uso de operadores)</li>
+                <li>Eliminar valores de una lista despegable (uso de atributos de etiqueta)</li>
+                <li>Un botón que me lleve a un video de youtube (con js) (uso de href en js)</li>
+                <li>Mandar un mensaje al usuario con el nombre colocado en el punto 1.3 (uso de alert)</li>
+                <li>Manda el nombre, a la consola de js del navegador (uso de console)</li>
+                <li>Un check, e imprimir su estado (uso de atributos del checkbox)</li>
+                <li>Un radio e imprimir su estado (uso de atributos del radiobutton)</li>
+                <li>Una validación de un campo, si este es numero enviar un mensaje que solo se permiten teclas. (investigar con que función se hace)</li>
+            </ol>
     </header>
-    <table> <!--3 columnas por 11 filas-->
-        <thead>
-            <tr>
-                <td>Descripcion del ejemplo</td>
-                <td>Ejemplo</td>
-                <td>Boton para activar el ejemplo</td>
-            </tr>
-        </thead>
-        <tbody>
-            <!--1.1-->
-            <tr>
-                <td>Cambiar el color de parrafo</td>
-                <td><p id="rojo">Texto negro y luego rojo</p></td>
-                <td><button onclick="colorRojo() ">activar</button></td>
-            </tr>
-            <!--1.2-->
-            <tr>
-                <td>Anadir texto a un parrafo</td>
-                <td><p id="parrafo">Bio: </p></td>
-                <td><button onclick="parrYafo()">activar</button></td>
-            </tr>
-            <!--1.3-->
-            <tr>
-                <td>Concatenar el valor de dos textos</td>
-                <td><p id="concatena">Parrafo</p>
-                    <input type="text" id="concatena2" placeholder="texto a agregar">
+    <section class="tabla">
+        <table> <!--3 columnas por 11 filas-->
+            <thead>
+                    <th>Descripcion del ejemplo</th>
+                    <th>Ejemplo</th>
+                    <th>Boton para activar el ejemplo</th>
+            </thead>
+            <tbody>
+                <!--1.1-->
+                <tr>
+                    <td>Cambiar el color de parrafo</td>
+                    <td><p id="rojo">Texto negro y luego rojo</p></td>
+                    <td><button onclick="colorRojo() ">activar</button></td>
+                </tr>
+                <!--1.2-->
+                <tr>
+                    <td>Anadir texto a un parrafo</td>
+                    <td><p id="parrafo">Bio: </p></td>
+                    <td><button onclick="parrYafo()">activar</button></td>
+                </tr>
+                <!--1.3-->
+                <tr>
+                    <td>Concatenar el valor de dos textos</td>
+                    <td><p id="concatena">Parrafo</p>
+                        <input type="text" id="concatena2" placeholder="texto a agregar">
+                    </td>
+                    
+                    <td><button onclick="concaOtena()">Activar</button></td>
+                </tr>
+                <!--1.4-->
+                <tr>
+                    <td>Eliminar valores de una lista despegable</td>
+                    <td><select name="languages" class="languages" id="lista">
+                      </select>
+                    <input type="text" id="caja" placeholder="dato a eliminar">
                 </td>
-                
-                <td><button onclick="concaOtena()">activar</button></td>
-            </tr>
-            <!--1.4-->
-            <tr>
-                <td>Eliminar valores de una lista despegable</td>
-                <td><select name="languages" class="languages" id="lista">
-                  </select>
-                <input type="text" id="caja" placeholder="dato a eliminar">
-            </td>
-                <td><button onclick="deletea()">activar</button></td>
-            </tr>
-            <!--1.5-->
-            <tr>
-                <td>Un boton que me lleve a un video de Youtube</td>
-                <td><button id="youtube" disabled>Youtube</button></td>
-                <td><button onclick="vidYou()">activar/desactivar</button></td>
-            </tr>
-            <!--1.6-->
-            <tr>
-                <td>Mandar un mensaje al usuario con el nombre colocado en el punto anterior</td>
-                <td>Aparecera una alerta</td>
-                <td><button onclick="alerta()">Activar</button></td>
-            </tr>
-            <!--1.7-->
-            <tr>
-                <td>Manda el nombre a la consola de JS del navegador</td>
-                <td>Aparecera en consola</td>
-                <td><button onclick="mandarAconsola()">Activar</button></td>
-            </tr>
-            <!--1.8-->
-            <tr>
-                <td>Un checkbox e imprimir su estado</td>
-                <td><input type="checkbox" id="gancho"></td>
-                <td><button onclick="imprimirCheck()">Activar</button></td>
-            </tr>
-            <!--1.9-->
-            <tr>
-                <td>Un radio e imprimir su estado</td>
-                <td><input type="radio" id="radio"></td>
-                <td><button onclick="imprimirRadio()">Activar</button>
-                </td>
-            </tr>
-            <!--1.10-->
-            <tr>
-                <td>Una validacion de un campo, si este es un numero enviar un mensaje que solo se permiten teclas</td>
-                <td><input type="text" id="campotecla"></td>
-                <td><button onclick="validacion()">Activar</button></td>
-            </tr>
-        </tbody>
-    </table>
-    <footer>
+                    <td><button onclick="deletea()">Activar</button></td>
+                </tr>
+                <!--1.5-->
+                <tr>
+                    <td>Un boton que me lleve a un video de Youtube</td>
+                    <td><button id="youtube" disabled>Youtube</button></td>
+                    <td><button onclick="vidYou()">Activar/Desactivar</button></td>
+                </tr>
+                <!--1.6-->
+                <tr>
+                    <td>Mandar un mensaje al usuario con el nombre colocado en el punto anterior</td>
+                    <td>Aparecera una alerta</td>
+                    <td><button onclick="alerta()">Activar</button></td>
+                </tr>
+                <!--1.7-->
+                <tr>
+                    <td>Manda el nombre a la consola de JS del navegador</td>
+                    <td>Aparecera en consola</td>
+                    <td><button onclick="mandarAconsola()">Activar</button></td>
+                </tr>
+                <!--1.8-->
+                <tr>
+                    <td>Un checkbox e imprimir su estado</td>
+                    <td><input type="checkbox" id="gancho"></td>
+                    <td><button onclick="imprimirCheck()">Activar</button></td>
+                </tr>
+                <!--1.9-->
+                <tr>
+                    <td>Un radio e imprimir su estado</td>
+                    <td><input type="radio" id="radio"></td>
+                    <td><button onclick="imprimirRadio()">Activar</button>
+                    </td>
+                </tr>
+                <!--1.10-->
+                <tr>
+                    <td>Una validacion de un campo, si este es un numero enviar un mensaje que solo se permiten teclas</td>
+                    <td><input type="text" id="campotecla"></td>
+                    <td><button onclick="validacion()">Activar</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
+    <footer>
+        <img class="utp_logo" src="images/UTP_Logo.png" alt="UTP Logo" />
+        <img class="fisc_logo" src="images/FISC_Logo.png" alt="FISC Logo" />
     </footer>
 </body>
 </html>

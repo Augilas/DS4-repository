@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Raleway:wght@600&display=swap');
+
+body, html
+{
+  font-family: 'Nunito Sans', sans-serif;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: #fcf0dd;
+}
+
+button {
+    background-color: #355bcd;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 4.5%;
+    text-transform: capitalize;
+    transition-duration: 1s;
+    margin: auto;
+}
+
+button:hover {
+    background-color: #87a4fd;
+    color: rgb(255, 255, 255);
+}
+
+button:disabled {
+    background-color: gray;
+    color: black;
+}
+
+button:disabled:hover{
+    background-color: gray;
+    color: black;
+}
+
+header {
+    text-align: center;
+}
+
+.Info_lab {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    margin-top: 2%;
+}
+
+.jascript {
+    height: 50%;
+    width: 50%;
+}
+
+.lista_parametros {
+    display: flex;
+    flex-direction: column;
+    padding-right: 15%;
+    padding-left: 15%;
+    line-height: 2em;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    
+}
+
+.tabla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+th {
+    border: 1px solid #f2f2f2;
+    background-color: #d68a07;
+    color: white;
+    padding: 0.5%;
+    font-weight: bold;
+    font-size: 1.2em;
+
+}
+
+tr:nth-child(even) {
+background-color: #fdd081;
+}
+
+tr {
+    background-color: #ffecca;
+}
+
+td:nth-child(1) {
+    font-weight: 600;
+}
+
+td:nth-child(3) {
+    text-align: center;
+    padding: 1%;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+.utp_logo {
+    display: flex;
+    float: left;
+    width: 150px;
+    height: 150px;
+}
+
+
+.fisc_logo {
+    display: flex;
+    float: right;
+    width: 150px;
+    height: 150px;
+}

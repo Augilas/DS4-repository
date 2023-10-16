@@ -9,7 +9,7 @@ function colorRojo() {
 /*
 function parrYafo() {
   var parrafo = document.getElementById("parrafo");
-  parrafo.innerHTML += getDatos(2);
+  parrafo.innerHTML += "Parrafo 2: Electric Boogaloo";
 } */
 //CON API
 function parrYafo() {
