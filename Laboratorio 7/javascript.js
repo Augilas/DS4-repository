@@ -6,17 +6,10 @@ function colorRojo() {
 
 //1.2
 //SIN API
-/*
+
 function parrYafo() {
   var parrafo = document.getElementById("parrafo");
   parrafo.innerHTML += "Parrafo 2: Electric Boogaloo";
-} */
-//CON API
-function parrYafo() {
-  var parrafo = document.getElementById("parrafo");
-  getDatos(2).then(data => {
-    parrafo.innerHTML += data;
-  });
 }
 
 //1.3
@@ -60,63 +53,86 @@ function alerta() {
 
 //1.7
 function mandarAconsola() {
-    var textoboxo = document.getElementById("concatena2");
-    if (textoboxo && textoboxo.value.trim() !== "") {
-        console.log(textoboxo.value);
-    } else {
-        console.log("Campo vacio o indefinido");
-    }
+  var textoboxo = document.getElementById("concatena2");
+  if (textoboxo && textoboxo.value.trim() !== "") {
+    console.log(textoboxo.value);
+  } else {
+    console.log("Campo vacio o indefinido");
+  }
 }
 
 //1.8
 function imprimirCheck() {
-    var confirmar = document.getElementById ("gancho");
-    var estado = confirmar.checked ? "marcado" : "desmarcado";
-    alert(estado);
+  var confirmar = document.getElementById("gancho");
+  var estado = confirmar.checked ? "marcado" : "desmarcado";
+  alert(estado);
 }
 //1.9
 function imprimirRadio() {
-    var confirmar = document.getElementById ("radio");
-    var estado = confirmar.checked ? "marcado" : "desmarcado";
-    alert(estado);
-    if (confirmar.checked) confirmar.checked = false;
-    
+  var confirmar = document.getElementById("radio");
+  var estado = confirmar.checked ? "marcado" : "desmarcado";
+  alert(estado);
+  if (confirmar.checked) confirmar.checked = false;
 }
 //1.10
 function validacion() {
-    var campotecla = document.getElementById("campotecla");
-    const patron = /^[A-Za-z!@#$%^&*()\-\_+=\[\]{\}\|;:'",.<>?\/\\ ]+$/;
-    var mensaje = patron.test(campotecla.value) ? campotecla.value : "Solo se admiten teclas, no numeros";
-    alert (mensaje);
-}
-//API
-function getDatos(llama) {
-  return fetch("https://api.jikan.moe/v4/characters/19492")
-    .then(res => {
-      if (res.ok) {
-        return res.json().then(persona => {
-          if (llama === 1) {
-            mapDatos(persona.data);
-          } else {
-            return persona.data.about;
-          }
-        });
-      } else {
-        throw new Error("Error al conectar a la API");
-      }
-    });
+  var campotecla = document.getElementById("campotecla");
+  const patron = /^[A-Za-z!@#$%^&*()\-\_+=\[\]{\}\|;:'",.<>?\/\\ ]+$/;
+  var mensaje = patron.test(campotecla.value)
+    ? campotecla.value
+    : "Solo se admiten teclas, no numeros";
+  alert(mensaje);
 }
 
-function mapDatos(persona) {
-  var texto = document.getElementById("rojo");
-  texto.innerHTML = persona.name;
+//mapeo al api
+async function getDatos() {
+  var p1 = document.getElementById("personaje1").value;
+  var p2 = document.getElementById("personaje2").value;
+  var p3 = document.getElementById("personaje3").value;
 
-  var lista = document.getElementById("lista");
-  persona.nicknames.forEach(p => {
-    lista.innerHTML += mapDatos2(p);
-  });
-}
+  if (!p1 || !p2 || !p3) {
+    alert("Ninguno de los campos puede estar vacío");
+    return;
+  }
 
-function mapDatos2(p) {
-  return `<option value="${p}">${p}</option>`;
+  for (var i = 1; i <= 3; i++) {
+    var vari1 = "imagenAnime" + i;
+    var vari2 = "nombre" + i;
+    var vari3 = "anime" + i;
+    var imagenAnime = document.getElementById(vari1);
+    var nombre = document.getElementById(vari2);
+    var anime = document.getElementById(vari3);
+    var url;
+
+    switch (i) {
+      case 1:
+        url = "https://api.jikan.moe/v4/characters/" + p1 + "/full";
+        break;
+      case 2:
+        url = "https://api.jikan.moe/v4/characters/" + p2 + "/full";
+        break;
+      case 3:
+        url = "https://api.jikan.moe/v4/characters/" + p3 + "/full";
+        break;
+    }
+
+    try {
+      const response = await fetch(url);
+     if (!response.ok) {
+        throw new Error("La API no respondió :<");
+      } 
+      const data = await response.json();
+
+      imagenAnime.src = data.data.images.jpg.image_url;
+      nombre.value = data.data.name;
+      anime.value = data.data.manga[0].manga.title;
+
+    } catch (error) {
+      console.error(error);
+      imagenAnime.alt = "no se encontro :(";
+      imagenAnime.src = "";
+      nombre.value = "no se encontro :((";
+      anime.value = "no se encontro :(((";
+    }
+  }
 }
