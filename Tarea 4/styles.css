@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+body {
+    background-color: rgb(17, 62, 145)
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 8%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#section-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#input-box-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    width: 80%;
+    max-width: 50%;
+    border-radius: 15px;
+    padding: 5% 0%;
+    margin: 10% 10%;
+}
+
+#input-box {
+    display: flex;
+    align-items: center;
+    background: #e5e5e5;
+    width: 80%;
+    max-width: 50%;
+    border-radius: 15px;
+    padding: 0% 5%;
+    margin: 2% 10%;
+}
+
+#input-box2 {
+    display: flex;
+    align-items: center;
+    background: #e5e5e5;
+    width: 80%;
+    max-width: 50%;
+    border-radius: 15px;
+    padding: 0% 5%;
+    margin: 2% 10%;
+}
+
+#input-box2 input {
+    width: 100%;
+    padding: 5% 0;
+    border: 0;
+    outline: 0;
+    color: #555;
+    font-size: 0.7em;
+    background-color: #e5e5e5;
+}
+
+#input-box input {
+    width: 100%;
+    padding: 5% 0;
+    border: 0;
+    outline: 0;
+    color: #555;
+    font-size: 0.7em;
+    background-color: #e5e5e5;
+}
+
+#input-box2 img {
+    width: 5%;
+    cursor: pointer;
+}
+
+button {
+    background-color: #3c6fe8;
+    color: #ffff;
+    border-radius: 15px;
+    padding: 1.8%;
+    font-size: 0.8em;
+    border: none;
+    width: 15%;
+    max-width: 15%;
+    height: 5%;
+    max-height: 5%;
+    transition-duration: 1s;
+}
+
+button:hover {
+    background-color: #88aaf9;
+}
+
+#loadingGif {
+    display: none;
+    width: 15%;
+}
+
