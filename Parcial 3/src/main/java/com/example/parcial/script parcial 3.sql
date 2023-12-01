@@ -62,8 +62,9 @@ values (null,null,'https://i.imgur.com/2Nd4NJx.png',1),
 	   (null,'Rich Broth',null,6),
 	   (null,'Customization Options',null,6),
 	   (null,'Healthy Choices',null,6),
+	   (null,'Friendly Services',null,6),
 	   ('We care about your comments and thus continously improve our products','With your help, we can keep improving our products by looking for ingredients and flavors to appeal to your taste and taste buds necessities, thus diminishing your needs to look further for the best Ramen restaurant in town!','https://i.imgur.com/HnUpNko.jpg',7),
-
+	   (null,null,'https://i.imgur.com/w2ydBoo.jpeg',8)
 	   ('Our team','Mario Philips','https://i.imgur.com/xS4GlAc.jpg',9),
 	   (null,'Elizabeth Johnson','https://i.imgur.com/bn2xTPu.jpg',9),
 	   (null,'Elijah Jameson','https://i.imgur.com/atqDMgF.jpg',9),
@@ -77,7 +78,8 @@ values (null,null,'https://i.imgur.com/2Nd4NJx.png',1),
 
 	   (null,'Do you want to inform us about your experience with us or have any questions that you would like to have answered? Then please enter your information on the enter your information on the form.',null,11),
 
-	   (null,'Copyright Rahme S.A. 2023',null,12)
+	   (null,'Copyright Rahme S.A. 2023',null,12),
+	   (null,null,'https://i.imgur.com/b6Ypv32.jpeg',13)
 
 	   insert into Ramen 
 	   values ('Basic broth',8),
